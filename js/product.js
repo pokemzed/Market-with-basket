@@ -14,7 +14,6 @@ if(products){
                     currentProduct.querySelectorAll('.image-pagination__item').forEach(el => {el.classList.remove('image-pagination__item--active')})
                     currentProduct.querySelector(`.image-pagination__item[data-index="${e.currentTarget.dataset.index}"]`).classList.add('image-pagination__item--active')
                 })
-
                 el.addEventListener('mouseleave', (e) => {
                     currentProduct.querySelectorAll('.image-pagination__item').forEach(el => {el.classList.remove('image-pagination__item--active')})
                     currentProduct.querySelector(`.image-pagination__item[data-index="0"]`).classList.add('image-pagination__item--active')
